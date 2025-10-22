@@ -34,8 +34,7 @@ function App() {
           <p className='flex flex-row'><div className='text-green-700'> Idade</div>: {user.idade}</p>
         </div>
 
-          <h1>HABILIDADES</h1>
-          
+        <h1>HABILIDADES</h1>  
         <div className='w-screen flex flex-row items-center justify-center gap-20'>
           {habilidades.map((hab) => (
             <div className=' flex p-5 items-center justify-center flex-col w-50  bg-emerald-700 text-white rounded-lg'> 
@@ -44,7 +43,8 @@ function App() {
           ))
           }
         </div>
-        <h1>Projetos</h1>
+
+        <h1>PROJETOS</h1>
         <div className='w-screen flex flex-row items-center justify-center gap-20'>
           {projs.map((proj) => (
             <div className='  flex p-5 items-center justify-center flex-col w-50  bg-emerald-700 text-white rounded-lg'>
