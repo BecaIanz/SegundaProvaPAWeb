@@ -24,8 +24,9 @@ function App() {
               <img className="rounded-lg w-58 h-40" src={diva.imagem} alt="nao foi né" />
               <p className='flex flex-row'><div className='text-purple-50'>ID: </div> {diva.id}</p>
               <p className='flex flex-row'><div className='text-purple-50'>Nome: </div>{diva.nome} {diva.sobrenome}</p>
-            
-              <p className='flex flex-row'><div className='text-purple-50'>Apelido: </div> {diva.apelido}</p>
+              {
+                diva.apelido === "" ? "" : <p className='flex flex-row'><div className='text-purple-50'>Apelido: </div> {diva.apelido}</p>
+              }
               {
                 diva.status === "Matriculado" ? <div className='text-lime-500'> Status: {diva.status}</div> : <div className='text-red-300'>Status: {diva.status}</div>
               }
